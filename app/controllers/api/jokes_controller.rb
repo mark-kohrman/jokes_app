@@ -4,4 +4,11 @@ class Api::JokesController < ApplicationController
 
     render 'index.json.jb'
   end
+
+  def show
+    response = HTTP.get("https://us-central1-dadsofunny.cloudfunctions.net/DadJokes/random/jokes?key=#{Rails.application.credentials.jokes_api[:api_key]}")
+    @jokes = response.parse
+
+    render 'show.json.jb'
+  end
 end

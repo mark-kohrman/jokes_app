@@ -1,0 +1,4 @@
+{
+setup: @jokes["setup"],
+punchline: @jokes["punchline"]
+}
