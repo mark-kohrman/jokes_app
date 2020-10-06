@@ -1,4 +1,4 @@
 {
-setup: @jokes["setup"],
-punchline: @jokes["punchline"]
+setup: @joke["setup"],
+punchline: @joke["punchline"]
 }
