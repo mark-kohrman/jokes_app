@@ -5,4 +5,7 @@ Rails.application.routes.draw do
     get "/jokes/:id" => "jokes#show"
 
   end
+
+  root 'applications#index'
+  get '/*path', to: 'application#index'
 end
