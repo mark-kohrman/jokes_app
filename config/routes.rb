@@ -4,6 +4,7 @@ Rails.application.routes.draw do
     get "/jokes" => "jokes#index"    
     get "/jokes/:id" => "jokes#show"
 
+
   end
 
   root 'applications#index'
