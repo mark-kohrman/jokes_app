@@ -7,6 +7,6 @@ Rails.application.routes.draw do
 
   end
 
-  root 'applications#index'
+  root 'application#index'
   get '/*path', to: 'application#index'
 end
