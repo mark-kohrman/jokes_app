@@ -6,6 +6,8 @@ class Api::JokesController < ApplicationController
   end
 
   def show
+    
+    
     response = HTTP.get("https://us-central1-dadsofunny.cloudfunctions.net/DadJokes/random/jokes?key=#{Rails.application.credentials.jokes_api[:api_key]}")
     @joke = response.parse
 
