@@ -1,4 +1,3 @@
 {
-setup: @joke["setup"],
-punchline: @joke["punchline"]
+  joke: @joke
 }
